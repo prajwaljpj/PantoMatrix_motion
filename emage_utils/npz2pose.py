@@ -283,7 +283,7 @@ def render2d(
     h, w = resolution
     # for face-only, override camera to zoom in
     if face_only:
-        camera_transl = (0.0, -1.55, 6.0)
+        camera_transl = (0.0, -0.9, 1.5) # Final adjustment for centering and a 0.5 unit distance
         focal_length = 10000.0
     n, smplx_inputs = _load_motion_dict(
         motion_dict, device, remove_global=remove_global, face_only=face_only
